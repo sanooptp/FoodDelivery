@@ -6,5 +6,5 @@ from django.urls import path
 from baseapp.views import BaseView
 
 urlpatterns = [
-    path('', BaseView.as_view(), name='baseapp'),
+    path('', BaseView.as_view(), name='base'),
 ]
