@@ -2,12 +2,12 @@ from django.db import models
 
 
 CATEGORY= (
-    ('1', 'Vegitarian'),
-    ('2', 'Chinese'),
-    ('3', 'Meal'),
-    ('4', 'Icecreams'),
-    ('5', 'Shakes'),
-    ('6', 'Soups'),
+    ('VEGITARIAN', 'Vegitarian'),
+    ('CHINESE', 'Chinese'),
+    ('MEAL', 'Meal'),
+    ('ICECREAMS', 'Icecreams'),
+    ('SHAKES', 'Shakes'),
+    ('SOUPS', 'Soups'),
 )
 
 class Food(models.Model):
