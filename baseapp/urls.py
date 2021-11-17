@@ -8,6 +8,6 @@ from baseapp.views import BaseView
 
 
 urlpatterns = [
-    path('', BaseView.as_view(), name='base'),
+    path('base', BaseView.as_view(), name='base'),
 ]
 

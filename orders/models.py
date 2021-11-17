@@ -6,6 +6,7 @@ from foods.models import Food
 class Order(models.Model):
     user= models.ForeignKey(User, on_delete=models.CASCADE)
     food= models.ForeignKey(Food, on_delete=models.CASCADE)
+    quantity= models.IntegerField(default=1)
     date_time = models.DateTimeField(auto_now_add= True)
     price= models.IntegerField(null= False)
     is_placed= models.BooleanField(default= False)

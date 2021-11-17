@@ -5,6 +5,7 @@ from django.views.generic import ListView
 from django.urls import reverse_lazy
 from foods.forms import CreateFoodForm
 from .models import Food
+from django.contrib.auth.forms import UserCreationForm
 
 # class CreateFoodView(FormView):
 #     template_name = 'createfood.html'
@@ -43,3 +44,5 @@ class FoodShowView(ListView):
     template_name = 'foods/showfood.html'
     model = Food
     context_object_name = 'foods'
+
+
